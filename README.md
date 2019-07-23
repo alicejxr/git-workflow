@@ -18,3 +18,9 @@ git tag v0.2    # 新建tag v0.2
 git push origin master    # 推送master分支代码到远端
 git push origin --tags    # 推送tag到远端
 ```
+3. 这里可以继续develop分支，并不断push到远端。此时如果团队成员增加，多人需要开发不同的功能，这里就会用到feature分支。团队中的每个人都从Github克隆一个项目，然后新建自己的feature分支。
+```
+git clone xxxx.git
+git checkout develop
+git checkout -b feature-xx develop    # 从develop分支新建并检出feature分支
+```
